@@ -44,7 +44,9 @@ export default class EventHandler extends React.Component {
     }
 
     componentDidMount() {
-        this.eventHandlerRef.addEventListener("wheel", this.handleScrollWheel, { passive: false });
+        this.eventHandlerRef.addEventListener("wheel", this.handleScrollWheel, {
+            passive: false
+        });
     }
 
     // get the event mouse position relative to the event rect
